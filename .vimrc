@@ -31,6 +31,12 @@ Plugin 'tomasiser/vim-code-dark'
 Plugin 'catppuccin/catppuccin'
 Plugin 'NLKNguyen/papercolor-theme'
 Plugin 'ghifarit53/tokyonight-vim'
+Plugin 'marcopaganini/termschool-vim-theme'
+Plugin 'jaredgorski/spacecamp'
+Plugin 'whatyouhide/vim-gotham'
+Plugin 'wadackel/vim-dogrun'
+Plugin 'Badacadabra/vim-archery'
+Plugin 'jdsimcoe/abstract.vim'
 
 call vundle#end()
 " " standard
@@ -39,16 +45,28 @@ call vundle#end()
 " autocmd vimenter * colorscheme dracula 
 " " purple
 " autocmd vimenter * colorscheme shades_of_purple
+" " more purple
+" autocmd vimenter * colorscheme dogrun
 " " grayish
 " autocmd vimenter *  colorscheme iceberg
-" vs code
-autocmd vimenter * colorscheme codedark
-" " very cool!
-" autocmd vimenter * colorscheme PaperColor
+" " vs code
+" autocmd vimenter * colorscheme codedark
+" " far manager
+" autocmd vimenter * colorscheme far
+" very cool!
+autocmd vimenter * colorscheme PaperColor
+" " try tomorrow!
+" autocmd vimenter * colorscheme gotham256
+" " blue
+" autocmd vimenter * colorscheme archery
 " " tokyo
 " autocmd vimenter * colorscheme tokyonight
-" " jelly
-" autocmd vim enter * colorscheme jellybeans
+" " new
+" autocmd vimenter * colorscheme termschool
+" " new2
+" autocmd vimenter * colorscheme spacecamp_lite
+" " new3
+" autocmd vimenter * colorscheme abstract
 
 set background=dark
 let g:gruvbox_contrast_dark = 'soft'
