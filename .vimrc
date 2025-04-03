@@ -3,6 +3,9 @@ set nocompatible
 set showcmd
 filetype off
 syntax on
+set expandtab
+set autoindent
+set smartindent
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -37,6 +40,10 @@ Plugin 'whatyouhide/vim-gotham'
 Plugin 'wadackel/vim-dogrun'
 Plugin 'Badacadabra/vim-archery'
 Plugin 'jdsimcoe/abstract.vim'
+Plugin 'rodnaph/vim-color-schemes'
+Plugin 'wojciechkepka/vim-github-dark'
+Plugin 'romainl/vim-dichromatic'
+Plugin 'habamax/vim-polar'
 
 call vundle#end()
 " " standard
@@ -53,8 +60,10 @@ call vundle#end()
 " autocmd vimenter * colorscheme codedark
 " " far manager
 " autocmd vimenter * colorscheme far
-" very cool!
-autocmd vimenter * colorscheme PaperColor
+" " very cool!
+" autocmd vimenter * colorscheme PaperColor
+" " Ron
+" autocmd vimenter * colorscheme ron
 " " try tomorrow!
 " autocmd vimenter * colorscheme gotham256
 " " blue
@@ -67,6 +76,12 @@ autocmd vimenter * colorscheme PaperColor
 " autocmd vimenter * colorscheme spacecamp_lite
 " " new3
 " autocmd vimenter * colorscheme abstract
+" " github dark
+" autocmd vimenter * colorscheme ghdark
+" " colorblind
+" colorscheme dichromatic
+" windows white
+autocmd vimenter * colorscheme polar
 
 set background=dark
 let g:gruvbox_contrast_dark = 'soft'
@@ -94,7 +109,12 @@ set magic
 set hid
 set showmatch
 set mat=2
+set belloff=all
 nnoremap <silent> <CR> :noh<CR><CR>
+
+" set template
+autocmd BufNewFile *.py 0r ~/lab/siqube/scratch/py-scripts/python_template.py
+
 
 " annoying sounds
 set noerrorbells
@@ -117,7 +137,6 @@ endif
 " endif
 
 " tabbing and indentation
-set expandtab
 set smarttab
 set shiftwidth=4
 set tabstop=4
