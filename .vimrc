@@ -44,6 +44,8 @@ Plugin 'rodnaph/vim-color-schemes'
 Plugin 'wojciechkepka/vim-github-dark'
 Plugin 'romainl/vim-dichromatic'
 Plugin 'habamax/vim-polar'
+Plugin 'jnurmine/zenburn'
+Plugin 'rebelot/kanagawa.nvim'
 
 call vundle#end()
 " " standard
@@ -60,8 +62,8 @@ call vundle#end()
 " autocmd vimenter * colorscheme codedark
 " " far manager
 " autocmd vimenter * colorscheme far
-" " very cool!
-" autocmd vimenter * colorscheme PaperColor
+" very cool!
+autocmd vimenter * colorscheme PaperColor
 " " Ron
 " autocmd vimenter * colorscheme ron
 " " try tomorrow!
@@ -79,13 +81,17 @@ call vundle#end()
 " " github dark
 " autocmd vimenter * colorscheme ghdark
 " " colorblind
-" colorscheme dichromatic
-" windows white
-autocmd vimenter * colorscheme polar
+" autocmd vimenter * colorscheme dichromatic
+" " windows white
+" autocmd vimenter * colorscheme polar
+" " zenburn
+" autocmd vimenter * colorscheme zenburn
+" " japan DOESNTWORK
+" autocmd vimenter * colorscheme kanagawa
 
-set background=dark
+set background=light
 let g:gruvbox_contrast_dark = 'soft'
-let g:gruvbox_contrast_light = 'hard'
+let g:gruvbox_contrast_light = 'soft'
 let g:rainbow_active = 1
 let g:airline#extensions#tabline#enabled = 1           " enable airline tabline
 let g:airline#extensions#tabline#buffer_nr_show = 1
